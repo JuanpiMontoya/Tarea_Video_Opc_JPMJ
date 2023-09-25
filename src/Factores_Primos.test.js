@@ -9,4 +9,8 @@ describe("Factores Primos", () => {
     expect(mostrarPrimos(2)).toEqual([2]);
   });
 
+  it("Se devuelve una lista con los factores correspondientes para el caso del 3", () => {
+    expect(mostrarPrimos(3)).toEqual([3]);
+  });
+
 });
