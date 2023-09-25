@@ -1,14 +1,13 @@
 
 function mostrarPrimos(n){
     const primos_num =[]
-    if (n > 1){
-        while (n % 2 == 0){
-            primos_num.push(2);
-            n = n / 2;
+    let divisor = 2;
+    while (n > 1){
+        while (n % divisor == 0){
+            primos_num.push(divisor);
+            n = n / divisor;
         }
-        if (n > 1){
-            primos_num.push(n);
-        }     
+        divisor++;     
     }
     return primos_num;
 }

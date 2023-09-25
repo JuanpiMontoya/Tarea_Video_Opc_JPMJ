@@ -25,4 +25,7 @@ describe("Factores Primos", () => {
     expect(mostrarPrimos(8)).toEqual([2,2,2]);
   });
 
+  it("Se devuelve una lista con los factores correspondientes para el caso del 9", () => {
+    expect(mostrarPrimos(9)).toEqual([3,3]);
+  });
 });
