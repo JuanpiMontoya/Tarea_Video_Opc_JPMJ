@@ -2,7 +2,7 @@
 function mostrarPrimos(n){
     const primos_num =[]
     if (n > 1){
-        if (n % 2 == 0){
+        while (n % 2 == 0){
             primos_num.push(2);
             n = n / 2;
         }
