@@ -13,4 +13,8 @@ describe("Factores Primos", () => {
     expect(mostrarPrimos(3)).toEqual([3]);
   });
 
+  it("Se devuelve una lista con los factores correspondientes para el caso del 4", () => {
+    expect(mostrarPrimos(4)).toEqual([2,2]);
+  });
+
 });
